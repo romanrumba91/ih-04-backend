@@ -31,7 +31,7 @@ const app = express()
 
 // Middlewares
 
-//Rutas
+//Rutasds
 
 app.use("/", require("./routes/index"))
 
