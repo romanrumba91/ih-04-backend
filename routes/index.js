@@ -11,8 +11,8 @@ router.get("/", (req, res) => {
     res.send("Hola mundo")
 })
 
-router.get("/contacto", ( => {
+router.get("/contacto", (req, res )=> {
     res.send("Contacto")
-}))
+})
 // 3. Exportaciones
 module.exports = router
