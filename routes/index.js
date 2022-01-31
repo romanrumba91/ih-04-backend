@@ -17,6 +17,10 @@ router.get("/usuarios", (req, res) => {
 	res.send("Usuarios")
 })
 
+router.get("/perritos", (req,res) => {
+    res.render("index")
+})
+
 // 3. EXPORTACIÓN
 module.exports = router
 
