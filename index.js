@@ -30,6 +30,8 @@ const express =  require("express")
 const app = express()
 
 // Middlewares
+//activar variable entornos, si estas en local vale una cosa y entorno en otroa
+require("dotenv").config()
 
 //Rutasds
 
@@ -37,7 +39,7 @@ app.use("/", require("./routes/index"))
 
 //Servidores
 
-app.listen(3006, () => {
+app.listen(process.env.PORT, () => {
 
     console.log("Servidor activo")
 })
